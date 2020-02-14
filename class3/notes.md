@@ -268,6 +268,9 @@ nav {
 ## Ejemplo
 Ver style.css
 
+## Tarea
+Clonar los estilos de : https://www.w3schools.com/
+
 ## Links
 Css básico => https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics
 Metodologías css => https://www.espai.es/blog/2016/07/metodologias-css-oocss-bem-smacss/
