@@ -148,20 +148,123 @@ Ejemplo
 }
 ```
 
-## Tipos de caja
+## Modelo de caja
+- Cajas en bloque
+  - Su ancho ocupará el 100% de su contenedor
+  - Fuerza el salto de línea
+  - Se respeta el width y height
+- Cajas en línea
+  - No fuerza el salto de línea
+  - No aplic width y height
 
+### Contenido de una caja
+ - Margin:
+    - margin: 5px;
+    - margin-left: 5px;
+    - margin: 10px 5px;
+    - margin: 5px 10px 4px 2px;
+ - Border
+    - border: 1px solid green;
+    - border-width: 1px;
+    - border-style: solid;
+    - botder-color: green;
+ - Padding
+    - padding: 5px;
+    - padding-left: 5px;
+    - padding: 10px 5px;
+    - padding: 5px 10px 4px 2px;
+ - Content
 ## Pseudo clases
+Se añade al selector para especificar un estado determinado de un elemento
+```css
+div:hover {
+  background-color: #F89B4D;
+}
+```
 
+Otras pseudo clases:
+- active
+- checked
+- disabled
+- first
+- focus
+
+Ver más en: https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 ## Pseudo Elementos
+Se añade al selector para añadir estilo a una parte concreta del documento
+```css
+p::after { margin-top: 5px; }
+```
+
+Otros pseudo elementos:
+- ::before
+- ::first-line
+- ::selection
+
+Ver más en: https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
 
 ## Sistema de grillas
+Ejemplo de bootstrap
+Nota: Falta Completar
 
 ## Flexbox
+Ejemplo de bootstrap
+Nota: Falta Completar
 
 ## Frameworks
+- Bootstrap
+- Semantic UI
+- Skeleton
+- Bulma
 
 ## Pre procesadores
+- sass
+- less
+- stylus
 
+### SASS
+ 
+ - Variables
+
+ ```scss
+  $font-stack:    Helvetica, sans-serif;
+  $primary-color: #333;
+
+  body {
+    font: 100% $font-stack;
+    color: $primary-color;
+  }
+```
+
+- Anidación
+
+```scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+
+- Mixins
+```scss
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); }
+```
 ## Ejemplo
 Ver style.css
 
