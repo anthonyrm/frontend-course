@@ -1,0 +1,36 @@
+$color_principal: #0055ee;
+
+.p {
+  color: $color_principal;
+}
+
+
+h1 {
+  color: $color_principal;
+}
+
+.lista {
+  li {
+    color: #0055ff;
+    &:hover {
+      color: black;
+    }
+    &:first-child {
+      color: red;
+      &:hover{
+        color: black;
+      }
+    }
+    &:last-child {
+      color: yellow;
+    }
+  }
+}
+@mixin setFontPrincipal($property) {
+  font-size: $property;
+  font-weight: bold;
+  color: red;
+}
+.mi_texto { @include setFontPrincipal(14px) }
+
+.mi_parrafo { @include setFontPrincipal(11px) }

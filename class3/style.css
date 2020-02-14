@@ -1,7 +1,63 @@
+
+
 * {
   color: black;
 }
 
 p {
   font-size: 14px;
+  margin: 0px;
+}
+
+.first-p, .second-p {
+  display: block;
+  width: 200px;
+}
+
+h1 {
+  width: 10px;
+}
+
+.link {
+  /* display: inline-block; */
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+
+.lista li{
+  color: #0055ff;
+}
+
+.lista li:hover{
+  color: black;
+}
+
+.lista li:first-child{
+  color: red;
+}
+
+.lista li:first-child:hover{
+  color: black;
+}
+
+.lista li:last-child {
+  color: yellow;
+}
+
+.ele::before {
+  content: '**';
+  color: red;
+  margin-right:5px;
+}
+
+.ele::after {
+  content: 'X'
+}
+
+.ele::selection {
+  background-color: green;
 }
